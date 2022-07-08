@@ -20,3 +20,5 @@ For India use *in* America use *usa* for Germany use *de*
 ```
 https://disease.sh/v3/covid-19/countries/<country_name>
 ```
+# Image
+![alt text](https://github.com/Sunil531999/IoT-based-Covid19-tracker/blob/main/image.jpg?raw=true)
