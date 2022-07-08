@@ -1,9 +1,9 @@
-# esp8266-covid-19-tracker
-This a IoT Device that shows current covid cases
+# ESP8266-covid-19-tracker
+This a IoT Device that shows current covid stats
 
 Parts Required:
 ================
-1. ModeMCU (ESP8266)
+1. NodeMCU (ESP8266)
 2. ST7735 Display
 
 # API
