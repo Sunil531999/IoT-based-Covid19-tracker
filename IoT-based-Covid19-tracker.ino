@@ -10,7 +10,7 @@
 #define TFT_CS         D8     
 #define TFT_RST        D3
 #define TFT_DC         D4
-
+ //below is the fingerprint of https://disease.sh/ website
 const uint8_t fingerprint[20] = {0x2d, 0x90, 0xba, 0x2b, 0x42, 0x5f, 0x20, 0xb8, 0x86, 0xa8, 0x20, 0xde, 0x07, 0x9d, 0xbf, 0x0a, 0x68, 0xb8, 0xf6, 0x16};
 
 const char* country = "";
@@ -25,7 +25,6 @@ void setup() {
   
   tft.initR(INITR_GREENTAB);
   Serial.begin(115200);
-  // Serial.setDebugOutput(true);
 
   Serial.println();
   Serial.println();
@@ -37,7 +36,7 @@ void setup() {
     delay(1000);
   }
   WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP("SSID", "PASSWORD");
+  WiFiMulti.addAP("SSID", "PASSWORD"); //replace the SSID with your wifi name and PASSWORD with your wifi password
 }
 
 void loop() {
@@ -51,6 +50,7 @@ void loop() {
     HTTPClient https;
 
     Serial.print("[HTTPS] begin...\n");
+    //below you have to replace the country code https://disease.sh/v3/covid-19/countries/<country code or country name>
     if (https.begin(*client, "https://disease.sh/v3/covid-19/countries/in")) {  
 
       Serial.print("[HTTPS] GET...\n");
