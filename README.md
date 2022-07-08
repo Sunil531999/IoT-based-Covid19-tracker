@@ -16,7 +16,7 @@ https://disease.sh/v3/covid-19/countries/<country_name>
 ```
 Replace the *<country_name>* to specific country's shorthand notation or the full country name without space
 *Example*
-For India use inAmerica use USA for Germany use de
+For India use *in* America use *usa* for Germany use *de*
 ```
 https://disease.sh/v3/covid-19/countries/<country_name>
 ```
